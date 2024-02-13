@@ -1,0 +1,89 @@
+$green-50: #effef6;
+$green-100: #d9ffea;
+$green-200: #b6fcd6;
+$green-300: #7ef7b7;
+$green-400: #3eea8f;
+$green-500: #15d26f;
+$green-600: #0bae58;
+$green-700: #0c8345;
+$green-800: #106b3c;
+$green-900: #0f5834;
+$green-950: #02311a;
+$green-400-filt: invert(100%) sepia(60%) saturate(2641%) hue-rotate(66deg)
+  brightness(110%) contrast(83%);
+$green-500-filt: invert(74%) sepia(50%) saturate(4359%) hue-rotate(100deg)
+  brightness(100%) contrast(84%);
+$green-600-filt: invert(42%) sepia(39%) saturate(5235%) hue-rotate(128deg)
+  brightness(103%) contrast(91%);
+$green-700-filt: invert(25%) sepia(58%) saturate(5138%) hue-rotate(146deg)
+  brightness(89%) contrast(91%);
+$green-800-filt: invert(30%) sepia(37%) saturate(833%) hue-rotate(96deg)
+  brightness(103%) contrast(99%);
+$green-900-filt: invert(24%) sepia(84%) saturate(383%) hue-rotate(98deg)
+  brightness(94%) contrast(99%);
+$gray-50: #f7f7f7;
+$gray-100: #f0f0f0;
+$gray-200: #e3e3e3;
+$gray-300: #d1d1d1;
+$gray-400: #c2c2c2;
+$gray-500: #aaaaaa;
+$gray-600: #969696;
+$gray-700: #818181;
+$gray-800: #6a6a6a;
+$gray-900: #585858;
+$gray-950: #333333;
+
+// $screen-sm-min: 0px;
+$screen-md-min: 800px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1000px;
+$h1size: 102px;
+$h2size: 86px;
+$h3size: 66px;
+$h4size: 46px;
+$prsize: 32px;
+$plsize: 26px;
+$pelsize: 20px;
+$h1smallsize: 32px;
+$h2smallsize: 28px;
+$h3smallsize: 26px;
+$h4smallsize: 24px;
+$prsmallsize: 22px;
+$plsmallsize: 18px;
+$pelsmallsize: 14px;
+
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+// :export {
+// gray1: $gray1;
+// }

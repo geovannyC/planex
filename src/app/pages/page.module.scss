@@ -1,0 +1,19 @@
+@import "../page.module.scss";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn1 {
+  text-align: center;
+  justify-content: center;
+  width: 200px;
+  height: 30px;
+  background-color: rgb(192, 148, 90);
+  color: white;
+  cursor: pointer;
+}
+
