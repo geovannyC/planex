@@ -4,7 +4,7 @@ import { Parameters } from "@/redux/schemmas/appSchemma";
 import { setCurrentPublications } from "@/redux/features/app";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 
-import Preview from "../preview/page";
+import Preview from "../preview/index.js";
 import BackSide from "../backSide";
 import FrontSide from "../frontSide";
 

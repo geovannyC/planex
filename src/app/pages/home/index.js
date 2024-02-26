@@ -6,7 +6,7 @@ import Footer from "../../components/containers/footer/footer";
 import Header from "../../components/containers/header";
 import Legal from "../../components/containers/legal";
 
-import styles from "./page.module.scss";
+import styles from "./index.module.scss";
 
 const Home = () => {
   return (
