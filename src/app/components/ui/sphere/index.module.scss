@@ -1,0 +1,81 @@
+@import "../../../page.module.scss";
+
+.ball {
+  position: relative;
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  margin: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 120%, $gray-900, $gray-950 10%, $gray-600 80%, $gray-700 100%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 0px, $gray-300, rgba(255, 255, 255, 0) 58%);
+    -webkit-filter: blur(1px);
+    transform: rotate(-15deg);
+    z-index: 2;
+  }
+}
+
+.shadow::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(21, 21, 21);
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  z-index: -1;
+  right: 5%;
+  border-radius: 50%;
+  bottom: -2%;
+  height: 10%;
+  width: 70%;
+
+  @include xl {
+    filter: blur(0.2cqw);
+  }
+}
+
+.small {
+  width: 7cqw;
+  height: 7cqw;
+}
+
+.medium {
+  width: 10cqw;
+  height: 10cqw;
+}
+
+.large {
+  width: 12cqw;
+  height: 12cqw;
+}
+.middleLight,
+.ball .shadow {
+  &::before {
+    content: "";
+    transform: rotate(0deg);
+  }
+  &:after {
+    content: "";
+    right: 15%;
+    border-radius: 50%;
+  }
+}
+.rightLight,
+.ball .shadow {
+  &::before {
+    content: "";
+    transform: rotate(15deg);
+  }
+  &:after {
+    content: "";
+    left: -2%;
+  }
+}

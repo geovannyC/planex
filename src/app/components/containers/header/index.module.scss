@@ -1,0 +1,40 @@
+@import "../../../page.module.scss";
+
+.containerheader {
+  display: flex;
+  padding-left: 6%;
+  padding-top: 4%;
+  @include xl {
+    padding-top: 1.5%;
+
+  }
+  z-index: 1;
+  h3 {
+    display: flex;
+    align-items: center;
+    font-family: PlutoSans-Light;
+    bottom: 0;
+    color: $gothic-200;
+    margin-left: 4vw;
+    letter-spacing: 1vw;
+    font-weight: 400;
+    font-size: 2.4vw;
+    height: 50%;
+    @include xl {
+      height: 100%;
+      font-size: 1vw;
+      margin-left: 2vw;
+      letter-spacing: 0.8vw;
+      font-weight: 400;
+    }
+  }
+}
+.logo {
+  height: 2vh;
+  width: 2vh;
+
+  @include xl {
+    height: 1.8vw;
+    width: 1.8vw;
+  }
+}

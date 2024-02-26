@@ -1,0 +1,71 @@
+@import "../../../page.module.scss";
+
+.inner::-webkit-scrollbar {
+  display: none;
+}
+
+.swiperContainer {
+  z-index: 1;
+  width: 100vw;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  @include xl {
+    width: 20%;
+  }
+
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiperPaginationBullet {
+  width: 12px;
+  height: 12px;
+  background-color: $gray-400;
+  opacity: 1;
+}
+
+.swiperPaginationBulletActive {
+  width: 18px;
+  border-radius: 35%;
+  background-color: $gray-950;
+  opacity: 1;
+  transition: 200ms;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 18px;
+}
+
+.publication {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+
+  @include xl {
+    width: auto;
+    height: 100%;
+
+  }
+
+  filter: grayscale(87%) opacity(83%) contrast(1.3);
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.active {
+  filter: grayscale(0) opacity(1) contrast(1);
+  transition: 200ms;
+  cursor: auto;
+}

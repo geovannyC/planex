@@ -1,15 +1,21 @@
 import React from "react";
+
+import Details from "../../components/containers/details/details";
+import BackWall from "../../components/containers/backWall";
+import Footer from "../../components/containers/footer/footer";
+import Header from "../../components/containers/header";
+import Legal from "../../components/containers/legal";
+
 import styles from "./page.module.scss";
-import Preview from "../../components/containers/preview/page";
+
 const Home = () => {
   return (
     <div className={styles.containerHome}>
-      <div className={styles.header}>hola</div>
-      <div className={styles.body}>
-        <div className={styles.details}>hola1</div>
-        <div className={styles.preview}><Preview/></div>
-      </div>
-      <div className={styles.footer}>hola3</div>
+      <BackWall />
+      <Header />
+      <Details />
+      <Footer />
+      <Legal/>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import "../../styles/globals.css";
 import { Providers } from "@/redux/provider";
 
 export const metadata = {
-  title: "Template",
+  title: "Planet Express",
   description: "App",
   icons: {
     icon: "/logo3.ico",

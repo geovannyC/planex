@@ -9,18 +9,12 @@ $green-700: #0c8345;
 $green-800: #106b3c;
 $green-900: #0f5834;
 $green-950: #02311a;
-$green-400-filt: invert(100%) sepia(60%) saturate(2641%) hue-rotate(66deg)
-  brightness(110%) contrast(83%);
-$green-500-filt: invert(74%) sepia(50%) saturate(4359%) hue-rotate(100deg)
-  brightness(100%) contrast(84%);
-$green-600-filt: invert(42%) sepia(39%) saturate(5235%) hue-rotate(128deg)
-  brightness(103%) contrast(91%);
-$green-700-filt: invert(25%) sepia(58%) saturate(5138%) hue-rotate(146deg)
-  brightness(89%) contrast(91%);
-$green-800-filt: invert(30%) sepia(37%) saturate(833%) hue-rotate(96deg)
-  brightness(103%) contrast(99%);
-$green-900-filt: invert(24%) sepia(84%) saturate(383%) hue-rotate(98deg)
-  brightness(94%) contrast(99%);
+$green-400-filt: invert(100%) sepia(60%) saturate(2641%) hue-rotate(66deg) brightness(110%) contrast(83%);
+$green-500-filt: invert(74%) sepia(50%) saturate(4359%) hue-rotate(100deg) brightness(100%) contrast(84%);
+$green-600-filt: invert(42%) sepia(39%) saturate(5235%) hue-rotate(128deg) brightness(103%) contrast(91%);
+$green-700-filt: invert(25%) sepia(58%) saturate(5138%) hue-rotate(146deg) brightness(89%) contrast(91%);
+$green-800-filt: invert(30%) sepia(37%) saturate(833%) hue-rotate(96deg) brightness(103%) contrast(99%);
+$green-900-filt: invert(24%) sepia(84%) saturate(383%) hue-rotate(98deg) brightness(94%) contrast(99%);
 $gray-50: #f7f7f7;
 $gray-100: #f0f0f0;
 $gray-200: #e3e3e3;
@@ -32,8 +26,31 @@ $gray-700: #818181;
 $gray-800: #6a6a6a;
 $gray-900: #585858;
 $gray-950: #333333;
+$grayb-50: #d9dede;
 
-// $screen-sm-min: 0px;
+$grayb-100: #b2b9bb;
+$grayb-200: #a0a3ac;
+$grayb-300: #91969a;
+$grayb-400: #778083;
+$grayb-500: #6e737c;
+$grayb-600: #666b6f;
+$grayb-650: #51595e;
+$grayb-700: #2d3235;
+$orangeb-50: #e77450;
+
+$gothic-50: #f3f6f8;
+$gothic-100: #e1e9ec;
+$gothic-200: #c7d5da;
+$gothic-300: #a0b6c0;
+$gothic-400: #7a97a4;
+$gothic-500: #567584;
+$gothic-600: #4a6170;
+$gothic-700: #41525d;
+$gothic-800: #3a4650;
+$gothic-900: #343d45;
+$gothic-950: #1f272d;
+
+$screen-sm-min: 0px;
 $screen-md-min: 800px;
 $screen-lg-min: 992px;
 $screen-xl-min: 1000px;
@@ -84,6 +101,16 @@ $pelsmallsize: 14px;
   padding: 0;
 }
 
-// :export {
-// gray1: $gray1;
-// }
+:export {
+  gray50: $gray-50;
+  gray100: $gray-100;
+  gray200: $gray-200;
+  gray300: $gray-300;
+  gray400: $gray-400;
+  gray500: $gray-500;
+  gray600: $gray-600;
+  gray700: $gray-700;
+  gray800: $gray-800;
+  gray900: $gray-900;
+  gray950: $gray-950;
+}

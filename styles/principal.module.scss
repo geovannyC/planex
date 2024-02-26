@@ -3,7 +3,7 @@
 
 .container {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: grid;
   background-color: $gray1;
   @include xl {

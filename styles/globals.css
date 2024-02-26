@@ -10,7 +10,22 @@
 .light {
   background-color: #d8dbea;
 }
+h1{
+  font-family: "PlutoSans-Heavy";
+}
+h2{
+  font-family: "Montserrat-Regular";
+}
+h3{
+  font-family: "Montserrat-ExtraLight";
+  letter-spacing: 0.1vw;
+  font-size: 0.6rem;
 
+
+}
+small{
+  font-family: "Montserrat-Regular";
+}
 @font-face {
   font-family: "Montserrat-Black";
   src: url("../public/fonts/Montserrat/static/Montserrat-Black.ttf");
@@ -46,4 +61,24 @@
 @font-face {
   font-family: "Montserrat-Thin";
   src: url("../public/fonts/Montserrat/static/Montserrat-Thin.ttf");
+}
+@font-face {
+  font-family: "PlutoSans-Black";
+  src: url("../public/fonts/Pluto/HvDTrial_PlutoSans-Black.otf");
+}
+@font-face {
+  font-family: "PlutoSans-Bold";
+  src: url("../public/fonts/Pluto/HvDTrial_PlutoSans-Bold.otf");
+}
+@font-face {
+  font-family: "PlutoSans-Medium";
+  src: url("../public/fonts/Pluto/HvDTrial_PlutoSans-Medium.otf");
+}
+@font-face {
+  font-family: "PlutoSans-Heavy";
+  src: url("../public/fonts/Pluto/HvDTrial_PlutoSans-Heavy.otf");
+}
+@font-face {
+  font-family: "PlutoSans-Light";
+  src: url("../public/fonts/Pluto/HvDTrial_PlutoSans-Light.otf");
 }

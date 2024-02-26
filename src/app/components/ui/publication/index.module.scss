@@ -1,0 +1,25 @@
+@import "../../../page.module.scss";
+
+.shadow {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &:before {
+        content: "";
+        position: absolute;
+        background-color: rgb(21, 21, 21);
+        -webkit-filter: blur(3px);
+        filter: blur(3px);
+        z-index: 1;
+        border-radius: 50%;
+        bottom: 0%;
+        height: 3%;
+        width: 35%;
+        @include xl {
+            height: 3%;
+            width: 20%;
+            filter: blur(2px);
+        }
+    }
+}

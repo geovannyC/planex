@@ -11,21 +11,31 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
-    "@types/node": "20.6.2",
-    "@types/react": "18.2.21",
-    "@types/react-dom": "18.2.7",
+    "@styled-icons/boxicons-logos": "^10.47.0",
+    "@styled-icons/boxicons-regular": "^10.47.0",
+    "@styled-icons/material": "^10.47.0",
+    "@styled-icons/material-rounded": "^10.47.0",
+    "@styled-icons/remix-fill": "^10.46.0",
     "axios": "^1.5.0",
     "chokidar": "^3.6.0",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
-    "next": "13.4.19",
+    "next": "^13.5.6",
     "nextjs-fonts": "^0.22.0",
     "react": "18.2.0",
     "react-content-loader": "^6.2.1",
+    "react-device-detect": "^2.2.3",
     "react-dom": "18.2.0",
     "react-redux": "^8.1.2",
     "redux": "^4.2.1",
     "sass": "^1.70.0",
-    "typescript": "5.2.2"
+    "swiper": "^11.0.6"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.20",
+    "@types/react": "^18.2.58",
+    "@types/react-dom": "^18.2.19",
+    "typescript": "^5.3.3"
   }
 }

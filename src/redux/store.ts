@@ -1,20 +1,16 @@
-import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "./features/counter";
-import initialState from "./features/initialState";
-import { jsonApi } from "./services/jsonApi";
+import appReducer from "./features/app";
 import { userApi } from "./services/userApi";
+import { configureStore } from "@reduxjs/toolkit";
 import { setupListeners } from "@reduxjs/toolkit/dist/query";
 
 export const store = configureStore({
   reducer: {
-    counterReducer,
-    initialState,
+    appReducer,
     [userApi.reducerPath]: userApi.reducer,
-    [jsonApi.reducerPath]: jsonApi.reducer,
   },
   devTools: process.env.NODE_ENV !== "production",
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({}).concat([jsonApi.middleware, userApi.middleware]),
+    getDefaultMiddleware({}).concat([userApi.middleware]),
 });
 
 setupListeners(store.dispatch);
