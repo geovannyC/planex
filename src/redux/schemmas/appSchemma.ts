@@ -1,11 +1,11 @@
 import { Publication, Sizes } from "./publicationSchemma";
 export type Parameters = {
-    idSize?: Number,
+    idSize?: number,
     idColor?: Number
-    image: string
+    image?: String
 }
 export type PublicationSelected = {
-    index: Number,
+    index: number,
     parameters: Parameters
 }
 export type InitialState = {

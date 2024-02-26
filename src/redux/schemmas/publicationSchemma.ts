@@ -4,10 +4,10 @@ type Icon = {
     tag: String
 }
 export type ContactData = {
-    id: Number,
+    id: number,
     text?: String,
     number?: String,
-    url?: String,
+    url?: string,
     txt: String,
     type: String,
     icon: Icon
@@ -15,12 +15,12 @@ export type ContactData = {
 type Data = {
     id: number,
     library: String
-    tag: String
+    tag: string
     detail: String
 }
 type Colors = {
     id: number,
-    color: String,
+    color: string,
     name: String,
     images: String[],
 }

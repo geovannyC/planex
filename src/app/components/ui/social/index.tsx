@@ -1,7 +1,7 @@
 import React from "react";
 
 import { isMobile } from "react-device-detect";
-import {  SocialProps } from "@/redux/schemmas/detailsSchemma";
+import { SocialProps } from "@/redux/schemmas/detailsSchemma";
 import { ContactData } from "@/redux/schemmas/publicationSchemma";
 
 import DinamicIcons from "../dinamicIcons";
@@ -10,7 +10,7 @@ import styles from "./index.module.scss";
 
 interface IconProps {
     data: ContactData,
-    link: String
+    link: string | undefined
 }
 const Icon = ({ data, link }: IconProps) =>
     <span
@@ -39,7 +39,7 @@ const Social = ({ contacts }: SocialProps) => {
 
     return (
         <div className={styles.containerSocial}>
-            {contacts.map(contact => <Icon data={contact} link={urlSerialized(contact)} key={contact.id}/>)}
+            {contacts.map(contact => <Icon data={contact} link={urlSerialized(contact)} key={contact.id} />)}
         </div>
     );
 };

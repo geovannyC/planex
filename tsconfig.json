@@ -28,7 +28,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/layout.js",
-    "app/page.tsx", "src/app/pages/store/page.js", "src/app/pages/fetching/page.js", "src/app/components/ui/slider/index.ts", "src/app/components/containers/footer/footer.js",
+    "app/page.tsx", "src/app/pages/store/page.js", "src/app/pages/fetching/page.js", "src/app/components/ui/slider/index.ts", "src/app/components/containers/footer/footer.js", "src/app/components/ui/dinamicIcons/index.js",
   ],
   "exclude": ["node_modules"]
 }

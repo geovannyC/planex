@@ -1,8 +1,6 @@
-import { Icons } from "@/redux/schemmas/detailsSchemma";
-
 import dynamic from "next/dynamic";
 
-const DinamicIcons = ({ library, tag }: Icons) => {
+const DinamicIcons = ({ library, tag }) => {
     const Icon = dynamic(async () => {
         const WarningResult = await import(
             "@styled-icons/material-rounded/Warning"

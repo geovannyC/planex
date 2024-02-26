@@ -1,11 +1,9 @@
 import React from 'react'
 import Image from 'next/image';
 
-import { Publication } from '@/redux/schemmas/publicationSchemma';
-
 import styles from "./index.module.scss";
 
-const PublicationPreview = (props) => {
+const PublicationPreview = (props: any) => {
     const imageLoader = ({ src }: { src: string }) => {
         return `https://i.postimg.cc/${src}`;
     };

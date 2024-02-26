@@ -2,7 +2,7 @@ import { ContactData } from "./publicationSchemma"
 
 export interface Icons {
     library: String,
-    tag: String,
+    tag: string,
 }
 export interface ObjAppearsProps {
     active: Boolean,
